@@ -1,2 +1,0 @@
-# AutomationFramework
-AutomationFramework setup
