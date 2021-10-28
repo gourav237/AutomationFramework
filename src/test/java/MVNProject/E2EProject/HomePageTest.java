@@ -21,6 +21,7 @@ public class HomePageTest extends base
 	{
 		driver = startUp();
 		System.out.println("Driver invoked");
+		System.out.println("I am here");
 	}
 	
 	@Test(dataProvider="loginData")
