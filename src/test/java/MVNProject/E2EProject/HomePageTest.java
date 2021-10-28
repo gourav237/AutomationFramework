@@ -35,6 +35,7 @@ public class HomePageTest extends base
 		WebElement pwdElement = homeobj.passwordObj();
 		pwdElement.sendKeys(password);
 		
+		System.out.println("Assertion");
 		Assert.assertTrue(true);
 		
 	}
