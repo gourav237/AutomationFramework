@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <title>TestNG Report</title>
@@ -7,23 +7,20 @@
 </head>
 <body>
 <table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test2</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">6,032</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Test1</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">6,930</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num attn">1</th><th class="num">12,962</th><th colspan="2"></th></tr>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test1</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,288</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test2</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">2,447</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">6,735</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">MVNProject.E2EProject.TitleValidation</td><td><a href="#m0">validateTitle</a></td><td rowspan="1">1634961419903</td><td rowspan="1">44</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">MVNProject.E2EProject.HomePageTest</td><td><a href="#m1">login</a></td><td rowspan="2">1634961416079</td><td rowspan="2">4048</td></tr><tr class="passedeven"><td><a href="#m2">login</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">MVNProject.E2EProject.HomePageTest</td><td><a href="#m0">login</a></td><td rowspan="2">1724476148352</td><td rowspan="2">448</td></tr><tr class="passedeven"><td><a href="#m1">login</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">MVNProject.E2EProject.TitleValidation</td><td><a href="#m2">validateTitle</a></td><td rowspan="1">1724476151693</td><td rowspan="1">48</td></tr></tbody>
 </table>
-<h2>Test2</h2><h3 id="m0">MVNProject.E2EProject.TitleValidation#validateTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected:&lt;Welcome to ILTR Registry Managers&gt; but was:&lt;Welcome to ILTR Registry Manager&gt;
+<h2>Test1</h2><h3 id="m0">MVNProject.E2EProject.HomePageTest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>gourav1@metamagics.com</td><td>Hello</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">MVNProject.E2EProject.HomePageTest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>gourav@metamagics.com</td><td>Hello</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test2</h2><h3 id="m2">MVNProject.E2EProject.TitleValidation#validateTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected:&lt;Welcome to ILTR Registry Managers&gt; but was:&lt;Welcome to ILTR Registry Manager&gt;
 	at MVNProject.E2EProject.TitleValidation.validateTitle(TitleValidation.java:28)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test1</h2><h3 id="m1">MVNProject.E2EProject.HomePageTest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>gourav@metamagics.com</td><td>Hello</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">MVNProject.E2EProject.HomePageTest#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>gourav1@metamagics.com</td><td>Hello</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

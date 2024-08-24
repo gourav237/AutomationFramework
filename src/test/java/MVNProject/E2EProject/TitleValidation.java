@@ -17,7 +17,6 @@ public class TitleValidation extends base
 	{
 		driver = startUp();
 		System.out.println("Driver invoked");
-		driver.navigate().to("https://iltr.gridsensehealth.com/GS_UI/gridsense/loginScreen.html");
 	}
 	
 	@Test
@@ -25,6 +24,6 @@ public class TitleValidation extends base
 	{
 		HomePageObj homeobj = new HomePageObj(driver);
 		log.info("Going for title assertion");
-		AssertJUnit.assertEquals("Welcome to ILTR Registry Managers",homeobj.pageTitleObj().getText());
+		AssertJUnit.assertEquals("Welcome to ILTR Registry Manager",homeobj.pageTitleObj().getText());
 	}
 }
