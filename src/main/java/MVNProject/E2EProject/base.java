@@ -14,8 +14,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class base
 {
 	public WebDriver driver;
@@ -23,18 +21,20 @@ public class base
 	public static Logger log = LogManager.getLogger(base.class.getName());
 	public WebDriver startUp() throws IOException
 	{
-		
+		System.out.println(System.getProperty("user.dir")+"\\resources\\data.properties");
 		prop = new Properties();
-		FileInputStream stream = new FileInputStream("/home/sanvar/workspaceSelenium/E2EProject/resources/data.properties");
+		FileInputStream stream = new FileInputStream(System.getProperty("user.dir")+"\\resources\\data.properties");
 		prop.load(stream);
 		
-		if(prop.getProperty("browser").equals("chrome"))
+		String browserName = System.getProperty("browser");
+		if(browserName.equals("chrome"))
 		{
-			WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver", (System.getProperty("user.dir")+"\\resources\\chromedriver.exe"));
 			driver = new ChromeDriver();
 			log.info("Driver invoked");
 		}
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.navigate().to("https://iltr.gridsensehealth.com/GS_UI/gridsense/loginScreen.html");
 		return driver;
 	}
 	

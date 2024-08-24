@@ -1,2 +1,3 @@
-MVNProject/E2EProject/base.class
-pageObjects/HomePageObj.class
+MVNProject\E2EProject\base.class
+MVNProject\E2EProject\ReportingTool.class
+pageObjects\HomePageObj.class

@@ -27,7 +27,6 @@ public class HomePageTest extends base
 	@Test(dataProvider="loginData")
 	public void login(String username, String password)
 	{
-		driver.navigate().to("https://iltr.gridsensehealth.com/GS_UI/gridsense/loginScreen.html");
 		HomePageObj homeobj = new HomePageObj(driver);
 		
 		WebElement usernameElement = homeobj.usernameObj();
