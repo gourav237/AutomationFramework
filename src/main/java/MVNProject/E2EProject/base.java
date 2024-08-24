@@ -29,6 +29,7 @@ public class base
 		String browserName = System.getProperty("browser");
 		if(browserName.equals("chrome"))
 		{
+			System.out.println("Chrome driver set up with properties");
 			System.setProperty("webdriver.chrome.driver", (System.getProperty("user.dir")+"\\resources\\chromedriver.exe"));
 			driver = new ChromeDriver();
 			log.info("Driver invoked");
