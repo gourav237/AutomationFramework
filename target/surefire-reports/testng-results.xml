@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-24T17:57:05 IST" name="Suite" finished-at="2024-08-24T17:57:07 IST" duration-ms="2307">
+  <suite started-at="2024-08-25T19:08:23 IST" name="Suite" finished-at="2024-08-25T19:08:41 IST" duration-ms="18938">
     <groups>
     </groups>
-    <test started-at="2024-08-24T17:57:05 IST" name="Test2" finished-at="2024-08-24T17:57:07 IST" duration-ms="2307">
+    <test started-at="2024-08-25T19:08:23 IST" name="Test2" finished-at="2024-08-25T19:08:41 IST" duration-ms="18938">
       <class name="MVNProject.E2EProject.TitleValidation">
-        <test-method is-config="true" signature="homePageNav()[pri:0, instance:MVNProject.E2EProject.TitleValidation@3f6db3fb]" started-at="2024-08-24T17:57:05 IST" name="homePageNav" finished-at="2024-08-24T17:57:07 IST" duration-ms="2206" status="PASS">
+        <test-method is-config="true" signature="homePageNav()[pri:0, instance:MVNProject.E2EProject.TitleValidation@3f6db3fb]" started-at="2024-08-25T19:08:23 IST" name="homePageNav" finished-at="2024-08-25T19:08:41 IST" duration-ms="18665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageNav -->
-        <test-method signature="validateTitle()[pri:0, instance:MVNProject.E2EProject.TitleValidation@3f6db3fb]" started-at="2024-08-24T17:57:07 IST" name="validateTitle" finished-at="2024-08-24T17:57:07 IST" duration-ms="63" status="PASS">
+        <test-method signature="validateTitle()[pri:0, instance:MVNProject.E2EProject.TitleValidation@3f6db3fb]" started-at="2024-08-25T19:08:41 IST" name="validateTitle" finished-at="2024-08-25T19:08:41 IST" duration-ms="159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTitle -->
